@@ -15,7 +15,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        
+        //创建窗口
+        let mainFrame = UIScreen.mainScreen().bounds
+        window = UIWindow(frame: mainFrame)
+        //设置视图
+        let leftViewController = LeftViewController()
+        let centerViewController = CenterViewController()
+        
+        let centerNavigationController = UINavigationController(rootViewController: centerViewController)
+        //let leftNavigationController = UINavigationController(rootViewController: leftViewController)
+        
+        let drawerController = MMDrawerController(centerViewController: centerNavigationController, leftDrawerViewController: leftViewController)
+        
+        drawerController.maximumLeftDrawerWidth = 280
+        //手势
+        drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureMode.All
+        drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.All
+        //设置根试图
+        self.window?.rootViewController = drawerController
+        //设置可见
+        window?.makeKeyAndVisible()
         return true
     }
 
