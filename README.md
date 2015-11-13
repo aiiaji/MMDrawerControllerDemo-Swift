@@ -4,7 +4,7 @@ Swift打造的通用侧滑抽屉效果模版，使用MMDrawerController框架
 
 对于这个导航的实现，已经有了非常优秀的第三方库来供我们使用：John-Llunch的SWRevealViewController 和Mutual Mobile的MMDrawerController，这里我使用的是MMDrawerController，有兴趣的可以使用SWRevealViewControler来实现一遍。
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/852671-efdffb394dae01ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png](http://upload-images.jianshu.io/upload_images/852671-39eb61e685f134eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 博客地址：http://www.jianshu.com/p/1064dc5ee65e
 
