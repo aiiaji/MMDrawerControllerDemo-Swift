@@ -12,6 +12,7 @@
 		1B52AE021BF58580001C3F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B52AE001BF58580001C3F9E /* Main.storyboard */; };
 		1B52AE041BF58580001C3F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B52AE031BF58580001C3F9E /* Assets.xcassets */; };
 		1B52AE071BF58581001C3F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B52AE051BF58581001C3F9E /* LaunchScreen.storyboard */; };
+		1B52AE111BF586A7001C3F9E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1B52AE101BF586A7001C3F9E /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1B52AE031BF58580001C3F9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B52AE061BF58581001C3F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B52AE081BF58581001C3F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B52AE101BF586A7001C3F9E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		1B52ADF01BF58580001C3F9E = {
 			isa = PBXGroup;
 			children = (
+				1B52AE101BF586A7001C3F9E /* Podfile */,
 				1B52ADFB1BF58580001C3F9E /* MMDrawerControllerDemo */,
 				1B52ADFA1BF58580001C3F9E /* Products */,
 			);
@@ -125,6 +128,7 @@
 			files = (
 				1B52AE071BF58581001C3F9E /* LaunchScreen.storyboard in Resources */,
 				1B52AE041BF58580001C3F9E /* Assets.xcassets in Resources */,
+				1B52AE111BF586A7001C3F9E /* Podfile in Resources */,
 				1B52AE021BF58580001C3F9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
