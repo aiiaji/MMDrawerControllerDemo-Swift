@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B1540811BF5D7610049F674 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1540801BF5D7610049F674 /* OtherViewController.swift */; };
+		1B1540831BF6119B0049F674 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1540821BF6119B0049F674 /* Common.swift */; };
 		1B52ADFD1BF58580001C3F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B52ADFC1BF58580001C3F9E /* AppDelegate.swift */; };
 		1B52AE041BF58580001C3F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B52AE031BF58580001C3F9E /* Assets.xcassets */; };
 		1B52AE071BF58581001C3F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B52AE051BF58581001C3F9E /* LaunchScreen.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		0CB7887780D0D51822178F70 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1540801BF5D7610049F674 /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		1B1540821BF6119B0049F674 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		1B52ADF91BF58580001C3F9E /* MMDrawerControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMDrawerControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B52ADFC1BF58580001C3F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B52AE031BF58580001C3F9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		1B52ADFB1BF58580001C3F9E /* MMDrawerControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1B1540821BF6119B0049F674 /* Common.swift */,
 				1B52ADFC1BF58580001C3F9E /* AppDelegate.swift */,
 				1B52AE171BF58C5F001C3F9E /* CenterViewController.swift */,
 				1B52AE191BF58C7B001C3F9E /* LeftViewController.swift */,
@@ -130,7 +133,6 @@
 				TargetAttributes = {
 					1B52ADF81BF58580001C3F9E = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 9YJM37DPL5;
 					};
 				};
 			};
@@ -206,6 +208,7 @@
 				1B52AE181BF58C5F001C3F9E /* CenterViewController.swift in Sources */,
 				1B1540811BF5D7610049F674 /* OtherViewController.swift in Sources */,
 				1B52AE1A1BF58C7B001C3F9E /* LeftViewController.swift in Sources */,
+				1B1540831BF6119B0049F674 /* Common.swift in Sources */,
 				1B52ADFD1BF58580001C3F9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MMDrawerControllerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.handsome.MMDrawerControllerDemo;
@@ -326,6 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MMDrawerControllerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.handsome.MMDrawerControllerDemo;

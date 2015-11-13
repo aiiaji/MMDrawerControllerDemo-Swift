@@ -5,7 +5,11 @@
 //  Created by wjl on 15/11/13.
 //  Copyright © 2015年 Martin. All rights reserved.
 //
-
+/*
+    Github： https://github.com/Wl201314
+    微博：http://weibo.com/5419850564/profile?rightmod=1&wvr=6&mod=personnumber
+    请持续关注，代码会进行重构优化
+*/
 import UIKit
 
 class LeftViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
@@ -17,15 +21,10 @@ class LeftViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
         setTableView()
     }
-    
-//    override func viewWillAppear(animated: Bool) {
-//        navigationController?.setNavigationBarHidden(true, animated: false)
-//
-//    }
-//    
+  
     func setTableView(){
         
-        tableView = UITableView(frame: CGRectMake(0, 0, 280, view.frame.height), style: UITableViewStyle.Plain)
+        tableView = UITableView(frame: CGRectMake(0, 0, Common.screenWidth * 0.7, view.frame.height), style: UITableViewStyle.Plain)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
@@ -33,9 +32,13 @@ class LeftViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         //设置headView
         let headImageViewHight: CGFloat = 160
-        let headImageView = UIImageView(frame: CGRectMake(0, 0, 280, headImageViewHight))
+        let headImageView = UIImageView(frame: CGRectMake(0, 0, Common.screenWidth * 0.7, headImageViewHight))
         headImageView.image = UIImage(named: "quesheng")
+        
         tableView.tableHeaderView = headImageView
+        //去掉下部空白格
+        self.tableView.tableFooterView = UIView()
+
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

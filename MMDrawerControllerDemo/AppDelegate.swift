@@ -5,7 +5,11 @@
 //  Created by wjl on 15/11/13.
 //  Copyright © 2015年 Martin. All rights reserved.
 //
-
+/*
+    Github： https://github.com/Wl201314
+    微博：http://weibo.com/5419850564/profile?rightmod=1&wvr=6&mod=personnumber
+    请持续关注，代码会进行重构优化
+*/
 import UIKit
 
 @UIApplicationMain
@@ -16,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        
         //创建窗口
         let mainFrame = UIScreen.mainScreen().bounds
         window = UIWindow(frame: mainFrame)
@@ -27,9 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let centerNavigationController = UINavigationController(rootViewController: centerViewController)
         //let leftNavigationController = UINavigationController(rootViewController: leftViewController)
         
-         drawerController = MMDrawerController(centerViewController: centerNavigationController, leftDrawerViewController: leftViewController)
+        drawerController = MMDrawerController(centerViewController: centerNavigationController, leftDrawerViewController: leftViewController)
         
-        drawerController.maximumLeftDrawerWidth = 280
+        drawerController.maximumLeftDrawerWidth = Common.screenWidth * 0.70
         //手势
         drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureMode.All
         drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.All
