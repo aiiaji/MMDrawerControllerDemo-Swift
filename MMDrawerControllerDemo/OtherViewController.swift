@@ -11,25 +11,20 @@ import UIKit
 class OtherViewController: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.title = "通用页"
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "Done"), style: UIBarButtonItemStyle.Plain, target: self, action: "doneSlide")
+        self.view.backgroundColor = UIColor.grayColor()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func doneSlide(){
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        
+        
+        
     }
-    */
 
 }

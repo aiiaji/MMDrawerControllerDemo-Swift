@@ -18,12 +18,12 @@ class CenterViewController: UIViewController {
         navigationItem.title = "主页"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "Done"), style: UIBarButtonItemStyle.Plain, target: self, action: "doneSlide")
     }
-
-    
-    
+   
     func doneSlide(){
         
-        MMDrawerController.toggleDrawerSide()
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+
         
         
     }

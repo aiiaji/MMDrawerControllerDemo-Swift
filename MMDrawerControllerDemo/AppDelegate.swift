@@ -12,8 +12,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    var drawerController:MMDrawerController!
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         
@@ -27,12 +27,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let centerNavigationController = UINavigationController(rootViewController: centerViewController)
         //let leftNavigationController = UINavigationController(rootViewController: leftViewController)
         
-        let drawerController = MMDrawerController(centerViewController: centerNavigationController, leftDrawerViewController: leftViewController)
+         drawerController = MMDrawerController(centerViewController: centerNavigationController, leftDrawerViewController: leftViewController)
         
         drawerController.maximumLeftDrawerWidth = 280
         //手势
         drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureMode.All
         drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.All
+        
+        //设置动画，这里是设置打开侧栏透明度从0到1
+        drawerController.setDrawerVisualStateBlock { (drawerController, drawerSide, percentVisible) -> Void in
+            
+            var sideDrawerViewController:UIViewController?
+            if(drawerSide == MMDrawerSide.Left){
+                sideDrawerViewController = drawerController.leftDrawerViewController;
+            }
+            sideDrawerViewController?.view.alpha = percentVisible
+        }
         //设置根试图
         self.window?.rootViewController = drawerController
         //设置可见
